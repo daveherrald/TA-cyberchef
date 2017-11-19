@@ -1,0 +1,10 @@
+Pre-requisites:
+
+Install Splunk Enterprise. This TA has been tested with version 7.x.
+Install base64 custom search command written by Cedric Le Roux. https://splunkbase.splunk.com/app/1922/
+
+Installation:
+Install this TA under $SPLUNK_HOME/etc/apps
+Restart Splunk
+
+Test:
