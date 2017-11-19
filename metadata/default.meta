@@ -1,0 +1,30 @@
+[]
+access = read : [ * ], write : [ admin, power ]
+export = system
+version = 6.6.3
+modtime = 1511118185.520939000
+
+[eventtypes]
+export = system
+
+[props]
+export = system
+
+[transforms]
+export = system
+
+[lookups]
+export = system
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+
+[app/ui]
+version = 6.6.3
+modtime = 1511118080.089713000
+
+[app/launcher]
+version = 6.6.3
+modtime = 1511118080.092313000
+
