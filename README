@@ -9,6 +9,7 @@ Installation:
  -Install this TA under $SPLUNK_HOME/etc/apps
  -Restart Splunk
 
+
 Test:
 -------------
 Load this Splunk search:
@@ -27,3 +28,22 @@ Substitute these values for the cchef field inb the search above to test differe
  - CyberChef-From_Hex -> "54 61 6b 65 20 74 68 65 20 53 48 20 6f 75 74 20 6f 66 20 49 54"
  - CyberChef-From_Hexdump -> "43 6f 6f 6c 20 73 74 6f 72 79 2c 20 62 72 6f"
  
+ 
+Use more/different CyberChef Recipes
+------------------------------------
+The provided workflow actions only represent a few of the many CyberChef Recipes. To create a workflow action to a new/different recipe, update the URL in the workflow action definition. Use CyberChef itself to to deternibne the changes. For example, the CyberChef recipe to convert to binary is "To_Binary('Space')".  
+
+
+Apply Workflow Actions to Different Fields
+------------------------------------------
+To apply these workflow actions to a different field, do the following:
+
+To apply the CyberChef workflow actions to a field called content_body
+ -Create a base64 version of the field: base64 field=contentbody_b64 action=encode
+ -Modify the workflow action definition to apply to content_body
+ -Modify the workflow action defineiton to pass $content_body_b54$ to Cyberchef
+
+
+To Use Your Own CyberChef Instance
+----------------------------------
+These definitions use the demo CyberChef instance provided by the creators of CyberChef. To use your own instance, simply modify the URL in the workflow definition(s).
