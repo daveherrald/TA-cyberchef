@@ -1,7 +1,14 @@
+CyberChef is known as "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis" 
+and is available at https://gchq.github.io/CyberChef. CyberChef is released under the Apache 2.0 Licence and is covered 
+by Crown Copyright.
+
+This Splunk technology add-on demostrates how to pivot out of Splunk and into CyberChef for additional analysis.
+
 Pre-requisites:
 ---------------
  -Install Splunk Enterprise. This TA has been tested with version 7.x.
  -Install base64 custom search command written by Cedric Le Roux. https://splunkbase.splunk.com/app/1922/ This TA has been tested with version 1.1 of the base64 command.
+ -Install CyberChef, or decide to use the CyberChef demo system.
 
 
 Installation:
@@ -11,7 +18,7 @@ Installation:
 
 
 Test:
--------------
+-----
 Load this Splunk search:
 
  earliest=0 index=* 
@@ -29,13 +36,13 @@ Substitute these values for the cchef field inb the search above to test differe
  - CyberChef-From_Hexdump -> "43 6f 6f 6c 20 73 74 6f 72 79 2c 20 62 72 6f"
  
  
-Use more/different CyberChef Recipes
-------------------------------------
+Use more/different CyberChef Recipes:
+-------------------------------------
 The provided workflow actions only represent a few of the many CyberChef Recipes. To create a workflow action to a new/different recipe, update the URL in the workflow action definition. Use CyberChef itself to to deternibne the changes. For example, the CyberChef recipe to convert to binary is "To_Binary('Space')".  
 
 
-Apply Workflow Actions to Different Fields
-------------------------------------------
+Apply Workflow Actions to Different Fields:
+-------------------------------------------
 To apply these workflow actions to a different field, do the following:
 
 To apply the CyberChef workflow actions to a field called content_body
@@ -44,6 +51,6 @@ To apply the CyberChef workflow actions to a field called content_body
  -Modify the workflow action defineiton to pass $content_body_b54$ to Cyberchef
 
 
-To Use Your Own CyberChef Instance
-----------------------------------
+To Use Your Own CyberChef Instance:
+-----------------------------------
 These definitions use the demo CyberChef instance provided by the creators of CyberChef. To use your own instance, simply modify the URL in the workflow definition(s).
