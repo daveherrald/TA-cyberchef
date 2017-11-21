@@ -7,7 +7,7 @@ by Crown Copyright.
 This Splunk technology add-on demostrates how to pivot out of Splunk and into CyberChef for additional analysis.
 
 ## Demo
-Check out [this quick demo](https://vimeo.com/243919059)
+Check out the integrations in [this quick demo video](https://vimeo.com/243919059)
 
 ## Pre-requisites:
 
