@@ -36,7 +36,7 @@ In the result set, locate the field named cchef and observe the associated workf
 Substitute these values for the cchef field in the search above to test different CyberChef recipes:
 
 - CyberChef-From_Base64 -> "SGV5IHRoZXJlLCBTcGx1bmsgdXNlciE="
-- CyberChef-From_Charcode -> "42 65 63 61 73 75 65 20 6e 69 6e 6a 61 73 20 61 72 65 20 74 6f 6f 20 62 75 73 79 2e 2e 2e"
+- CyberChef-From_Charcode -> "42 65 63 61 75 73 65 20 6e 69 6e 6a 61 73 20 61 72 65 20 74 6f 6f 20 62 75 73 79 2e 2e 2e"
 - CyberChef-From_Hex -> "54 61 6b 65 20 74 68 65 20 53 48 20 6f 75 74 20 6f 66 20 49 54"
 - CyberChef-From_Hexdump -> "43 6f 6f 6c 20 73 74 6f 72 79 2c 20 62 72 6f"
  
@@ -53,7 +53,7 @@ To apply these workflow actions to a different field, do the following:
 In this example we will apply CyberChef worklfow actions to a field called content_body.
 - Create a base64 version of the field: `base64 field=content_body_b64 action=encode`
 - Modify the workflow action definition to apply to content_body
-- Modify the workflow action defineiton to pass $content_body_b54$ to Cyberchef
+- Modify the workflow action defineiton to pass $content_body_b64$ to Cyberchef
 
 
 ## To Use Your Own CyberChef Instance:
