@@ -50,7 +50,7 @@ The provided workflow actions only represent a few of the many CyberChef Recipes
 
 To apply these workflow actions to a different field, do the following:
 
-In this example we will apply CynerChef worklfow actions to a field called content_body.
+In this example we will apply CyberChef worklfow actions to a field called content_body.
 - Create a base64 version of the field: `base64 field=contentbody_b64 action=encode`
 - Modify the workflow action definition to apply to content_body
 - Modify the workflow action defineiton to pass $content_body_b54$ to Cyberchef
@@ -58,4 +58,4 @@ In this example we will apply CynerChef worklfow actions to a field called conte
 
 ## To Use Your Own CyberChef Instance:
 
-These workflow actions use the demo CyberChef instance provided by the creators of CyberChef. To use your own instance, simply set up an instance according the CynerChef instrsuctions then modify the URL in the workflow definition(s)
+These workflow actions use the demo CyberChef instance provided by the creators of CyberChef. To use your own instance, simply set up an instance according the CyberChef instrsuctions then modify the URL in the workflow definition(s)
