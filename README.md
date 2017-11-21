@@ -51,7 +51,7 @@ The provided workflow actions only represent a few of the many CyberChef Recipes
 To apply these workflow actions to a different field, do the following:
 
 In this example we will apply CyberChef worklfow actions to a field called content_body.
-- Create a base64 version of the field: `base64 field=contentbody_b64 action=encode`
+- Create a base64 version of the field: `base64 field=content_body_b64 action=encode`
 - Modify the workflow action definition to apply to content_body
 - Modify the workflow action defineiton to pass $content_body_b54$ to Cyberchef
 
